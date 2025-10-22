@@ -7,10 +7,10 @@ import win32clipboard
 import traceback
 
 # ================= 사용자 설정 =================
-INPUT_HWP_ROOT   = r"C:\Users\tnwls\OneDrive\바탕 화면\서체변환_한글파일\hwp_organized_20250908\1"   # 루트 폴더 (하위폴더 전부 탐색)
+INPUT_HWP_ROOT   = r"C:\1"   # 루트 폴더 (하위폴더 전부 탐색)
 INCLUDE_HWPX     = False                       # .hwpx도 포함하려면 True
 REQUIRE_ANY_TABLE_FOR_CONTENT = False          # 표가 없으면 '내용없음'으로 간주하려면 True
-LOG_FILE         = r"C:\Users\tnwls\OneDrive\바탕 화면\서체변환_한글파일\hwp_organized_20250908\해설빈파일_log.txt"
+LOG_FILE         = r"C:\해설빈파일_log.txt"
 # =================================================
 
 def create_hwp():
@@ -139,3 +139,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
