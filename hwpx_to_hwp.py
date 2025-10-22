@@ -108,7 +108,7 @@ def hwpx_to_hwp(hwp, hwpx_path: str, out_path: str = None) -> str:
 def convert_hwpx_to_hwp(file_path: str) -> str:
     """
     C# 또는 Python에서 직접 호출 가능.
-    예: result = convert_hwpx_to_hwp(r"D:\\problem_ex\\test\\A_001.hwpx")
+    예: result = convert_hwpx_to_hwp(r"D:\\test\\A_001.hwpx")
     """
     pythoncom.CoInitialize()
     hwp, created = create_hwp(hide_window=True)
@@ -129,7 +129,7 @@ def convert_hwpx_to_hwp(file_path: str) -> str:
 # -------------------------
 # if __name__ == "__main__":
 ##     c# 에서 아래처럼 호출
-#     test_file = r"D:\problem_ex\test\A9208B0171_p.hwpx"
+#     test_file = r"D:\problem_ex\test\p.hwpx"
 #     result = convert_hwpx_to_hwp(test_file)
 
 
@@ -137,3 +137,4 @@ def convert_hwpx_to_hwp(file_path: str) -> str:
 #         print("✅ 변환 완료:", result)
 #     else:
 #         print("❌ 변환 실패:", test_file)
+
